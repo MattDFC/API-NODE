@@ -1,4 +1,4 @@
-Api Rest en Node.js
+# Api Rest en Node.js
 Descripción
 API REST para gestión de productos desarrollada con Node.js y Express.
 
@@ -9,7 +9,8 @@ Clonar el repositorio
 Instalar dependencias:
 npm install
 Configurar variables de entorno:
-# Copiar el archivo de ejemplo y completar los datos requeridos
+
+Copiar el archivo de ejemplo y completar los datos requeridos
 cp .env
 Luego editar el archivo .env con los valores correspondientes para tu entorno.
 ------------------------------------------------------------
@@ -161,6 +162,6 @@ Firestore
 
 ------------------------------------------------------------
 
-Autor
+# Autor:
 Linkedln: Matias Daniel Falon Coviello
 GitHub: https://github.com/PelaFaCov
