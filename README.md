@@ -13,6 +13,8 @@ git clone https://github.com/MattDFC/API-NODE
 ### Instalar dependencias:
 ```bash
 npm install
+```
+```bash
 npm install -g nodemon
 ```
 ------------------------------------------------------------
