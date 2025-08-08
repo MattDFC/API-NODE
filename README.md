@@ -108,7 +108,7 @@ Respuesta ejemplo:
 ## Actualizar parcialmente un producto con PATCH /products/:id
 ### Descripción: Actualiza parcialmente un producto existente. Parámetros:
 id (path, requerido): ID del producto a actualizar.
-###Body (JSON): Solo los campos que se desean actualizar
+### Body (JSON): Solo los campos que se desean actualizar
 ```
 { "price": 600 }
 ```
@@ -124,14 +124,13 @@ Respuesta ejemplo:
 id (path, requerido): ID del producto a eliminar.
 ### Respuesta: 204 No Content
 
-### Códigos de estado
-```
-200 - OK: Operación exitosa
-201 - Created: Recurso creado exitosamente
-204 - No Content: Recurso eliminado exitosamente
-400 - Bad Request: Datos de entrada inválidos
-404 - Not Found: Recurso no encontrado
-```
+### Códigos de estado:
+- 200 - OK: Operación exitosa
+- 201 - Created: Recurso creado exitosamente
+- 204 - No Content: Recurso eliminado exitosamente
+- 400 - Bad Request: Datos de entrada inválidos
+- 404 - Not Found: Recurso no encontrado
+
 ------------------------------------------------------------
 
 Estructura del proyecto:
