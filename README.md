@@ -8,6 +8,8 @@ Clonar el repositorio
 
 # Instalar dependencias:
 npm install
+npm install -g nodemon
+------------------------------------------------------------
 Configurar variables de entorno:
 Copiar el archivo de ejemplo y completar los datos requeridos
 cp .env
