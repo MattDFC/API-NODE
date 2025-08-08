@@ -162,13 +162,13 @@ vercel.json
 ------------------------------------------------------------
 
 ## Tecnologías utilizadas:
-### Node.js
-### Express.js
-### Nodemon
-### JSON Web Token (JWT) Debugger
-### ES6 Modules
-### Vercel
-### Firestore
+- Node.js
+- Express.js
+- Nodemon
+- JSON Web Token (JWT) Debugger
+- ES6 Modules
+- Vercel
+- Firestore
 
 ------------------------------------------------------------
 
