@@ -9,7 +9,7 @@
 ### Clonar el repositorio
 
 ```bash
-git clone <[URL-del-repo](https://github.com/MattDFC/API-NODE)>
+git clone https://github.com/MattDFC/API-NODE
 
 
 # Api Rest en Node.js
