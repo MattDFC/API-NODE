@@ -23,4 +23,3 @@ export const recursoNoDisponible = (res, recurso, id) => {
     const mensaje = `El ${recurso} ${id} no está disponible. Asegúrese de escribir el ID correctamente.`;
     return res.status(404).json({ error: mensaje });
 };
-
