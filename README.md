@@ -38,8 +38,7 @@ nodemon src/index.js
 ------------------------------------------------------------
 # Documentación de la API
 
-### Login
-### POST /login
+## Loguearse con POST /login
 ### Descripción: Devuelve un token JWT para autenticar las peticiones.
 ### Body (JSON):
 ```
@@ -50,7 +49,7 @@ nodemon src/index.js
 ```
 ------------------------------------------------------------
 
-## Obtener todos los productos por  GET /products
+## Obtener todos los productos con  GET /products
 ### Descripción: Devuelve la lista de todos los productos. Respuesta ejemplo:
 ```
 [
@@ -61,13 +60,12 @@ nodemon src/index.js
 ```
 ------------------------------------------------------------
 
-Obtener producto por ID
-GET /products/:id
-Descripción: Devuelve un producto específico por su ID.
-Parámetros:
+# Obtener producto por ID con GET /products/:id
+
+### Descripción: Devuelve un producto específico por su ID. Parámetros:
 id (path, requerido): ID del producto.
-Ejemplo de uso: /products/1
-Respuesta ejemplo:
+### Ejemplo de uso: /products/1
+### Respuesta ejemplo:
 ```
 [{ "id": 1, "name": "ThinkPad X1 Carbon Gen 11 (14" Intel)", "price": 3000 }]
 ```
