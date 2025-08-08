@@ -28,15 +28,20 @@ Luego editar el archivo .env con los valores correspondientes para tu entorno.
 ------------------------------------------------------------
 
 Ejecutar en modo desarrollo:
+```
 npm run dev
-Documentación de la API
-
+```
+Para correr constantemente con los cambios del codigo usar nodemon:
+```
+nodemon src/index.js
+```
 ------------------------------------------------------------
+### Documentación de la API
 
-Login
-POST /login
-Descripción: Devuelve un token JWT para autenticar las peticiones.
-Body (JSON):
+# Login
+# POST /login
+# Descripción: Devuelve un token JWT para autenticar las peticiones.
+# Body (JSON):
 ```
 {
   "email": "cliente@gmail.com",
