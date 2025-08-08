@@ -1,12 +1,4 @@
 # Api Rest en Node.js
-
-**Descripción:
-** API REST para gestión de productos desarrollada con Node.js y Express.
-
----
-## Instalación
-
-# Api Rest en Node.js
 Descripción
 API REST para gestión de productos desarrollada con Node.js y Express.
 
