@@ -4,14 +4,7 @@
 ** API REST para gestión de productos desarrollada con Node.js y Express.
 
 ---
-
 ## Instalación
-
-### Clonar el repositorio
-
-```bash
-git clone https://github.com/MattDFC/API-NODE
-
 
 # Api Rest en Node.js
 Descripción
@@ -20,6 +13,10 @@ API REST para gestión de productos desarrollada con Node.js y Express.
 ------------------------------------------------------------
 Instalación
 Clonar el repositorio
+
+```bash
+git clone https://github.com/MattDFC/API-NODE
+```
 
 # Instalar dependencias:
 npm install,
