@@ -2,43 +2,49 @@ Api Rest en Node.js
 Descripción
 API REST para gestión de productos desarrollada con Node.js y Express.
 
+------------------------------------------------------------
 Instalación
 Clonar el repositorio
+
 Instalar dependencias:
 npm install
 Configurar variables de entorno:
 # Copiar el archivo de ejemplo y completar los datos requeridos
 cp .env
 Luego editar el archivo .env con los valores correspondientes para tu entorno.
+------------------------------------------------------------
 
 Ejecutar en modo desarrollo:
 npm run dev
 Documentación de la API
+
+------------------------------------------------------------
+
 Login
 POST /login
 Descripción: Devuelve un token JWT para autenticar las peticiones.
 Body (JSON):
+
 {
-  "email": "admin@gmail.com",
-  "password": "1234"
+  "email": "cliente@gmail.com",
+  "password": "client1234"
 }
+
+------------------------------------------------------------
+
 Obtener todos los productos
 GET /products
 Descripción: Devuelve la lista de todos los productos.
 Respuesta ejemplo:
+
 [
-  { "id": 1, "name": "Router Wi-Fi TP-Link Archer C6", "price": 34990 },
-  { "id": 2, "name": "Impresora HP DeskJet 2375", "price": 67200 },
-  { "id": 3, "name": "Silla Ergonómica Gamer", "price": 126500 }
+  { "id": 1, "name": "ThinkPad X1 Carbon Gen 11 (14" Intel)", "price": 3000 },
+  { "id": 2, "name": "HP 250 G10 Intel Core i7-1355U 32GB RAM 1TB SSD 15.6" Intel Iris Xe FreeDOS Gris Oscuro", "price": 1200 },
+  { "id": 3, "name": "Yoga Slim 7i Gen 10 Aura Edition (14" Intel)", "price": 2000 }
 ]
-Buscar productos por nombre
-GET /products/search?name=palabra
-Descripción: Devuelve los productos cuyo nombre contiene la palabra indicada.
-Parámetros:
-name (query, requerido): texto a buscar en el nombre del producto.
-Ejemplo de uso: /products/search?name=teclado
-Respuesta ejemplo:
-[{ "id": 1, "name": "Teclado Mecánico Redragon", "price": 28700 }]
+
+------------------------------------------------------------
+
 Obtener producto por ID
 GET /products/:id
 Descripción: Devuelve un producto específico por su ID.
@@ -46,65 +52,115 @@ Parámetros:
 id (path, requerido): ID del producto.
 Ejemplo de uso: /products/1
 Respuesta ejemplo:
-{ "id": 1, "name": "Monitor Samsung 24\" LED", "price": 134500 }
+[{ "id": 1, "name": "ThinkPad X1 Carbon Gen 11 (14" Intel)", "price": 3000 }]
+
+
+------------------------------------------------------------
+
 Crear un producto
 POST /products
 Descripción: Crea un nuevo producto.
 Body (JSON):
+
 {
   "name": "Nuevo Producto",
   "price": 999,
-  "categories": ["Electronics", "Computers"]
 }
+
 Respuesta ejemplo:
+
 {
-  "id": 6,
+  "id": 4,
   "name": "Nuevo Producto",
   "price": 999,
-  "categories": ["Electronics", "Computers"]
 }
+
+------------------------------------------------------------
+
 Actualizar un producto (PUT)
 PUT /products/:id
 Descripción: Actualiza completamente un producto existente.
 Parámetros:
 id (path, requerido): ID del producto a actualizar.
+
 Body (JSON):
 { "name": "Producto Actualizado", "price": 500 }
+
 Respuesta ejemplo:
+
 { "id": 1, "name": "Producto Actualizado", "price": 500 }
+
+
+------------------------------------------------------------
+
 Actualizar parcialmente un producto (PATCH)
 PATCH /products/:id
 Descripción: Actualiza parcialmente un producto existente.
+
 Parámetros:
 id (path, requerido): ID del producto a actualizar.
+
 Body (JSON): Solo los campos que se desean actualizar
 { "price": 600 }
 Respuesta ejemplo:
-{ "id": 1, "name": "Notebook HP Ryzen 5", "price": 459900 }
+{ "id": 1, "name": "ThinkPad X1 Carbon Gen 11 (14" Intel)", "price": 3600 }
+
+------------------------------------------------------------
+
 Eliminar un producto
 DELETE /products/:id
 Descripción: Elimina un producto por su ID.
+
 Parámetros:
 id (path, requerido): ID del producto a eliminar.
 Respuesta: 204 No Content
+
 Códigos de estado
 200 - OK: Operación exitosa
 201 - Created: Recurso creado exitosamente
 204 - No Content: Recurso eliminado exitosamente
 400 - Bad Request: Datos de entrada inválidos
 404 - Not Found: Recurso no encontrado
-Estructura del proyecto
+
+------------------------------------------------------------
+
+Estructura del proyecto:
 src/
-├── Controllers/
-│   └── productsController.js
-├── Models/
-│   └── productModels.js
-└── Routes/
-    └── productsRouter.js
-Tecnologías utilizadas
+├── controllers/
+│   ├── authcontrollers.js
+│   └── productosController.js
+├── middlewares/
+│   └── authmiddleware.js
+├── models/
+│   ├── firebase.js
+│   └── productosmodel.js
+├── routes/
+│   ├── authRoutes.js
+│   └── productosRoutes.js
+├── services/
+│   ├── manejoErrores.js
+│   └── modularizaciones.js
+└── Index.js
+.env
+.gitignore
+package-lock.json
+package.json
+README.md
+vercel.json
+
+------------------------------------------------------------
+
+Tecnologías utilizadas:
 Node.js
 Express.js
+Nodemon
+JSON Web Token (JWT) Debugger
 ES6 Modules
+Vercel
+Firestore
+
+------------------------------------------------------------
+
 Autor
 Linkedln: Matias Daniel Falon Coviello
 GitHub: https://github.com/PelaFaCov
