@@ -60,7 +60,7 @@ nodemon src/index.js
 ```
 ------------------------------------------------------------
 
-# Obtener producto por ID con GET /products/:id
+## Obtener producto por ID con GET /products/:id
 
 ### Descripción: Devuelve un producto específico por su ID. Parámetros:
 id (path, requerido): ID del producto.
@@ -72,10 +72,9 @@ id (path, requerido): ID del producto.
 
 ------------------------------------------------------------
 
-Crear un producto
-POST /products
-Descripción: Crea un nuevo producto.
-Body (JSON):
+## Crear un producto con POST /products
+### Descripción: Crea un nuevo producto.
+### Body (JSON):
 ```
 {
   "name": "Nuevo Producto",
@@ -92,13 +91,10 @@ Respuesta ejemplo:
 ```
 ------------------------------------------------------------
 
-Actualizar un producto (PUT)
-PUT /products/:id
-Descripción: Actualiza completamente un producto existente.
-Parámetros:
+## Actualizar un producto con PUT /products/:id
+### Descripción: Actualiza completamente un producto existente. Parámetros:
 id (path, requerido): ID del producto a actualizar.
-
-Body (JSON):
+### Body (JSON):
 ```
 { "name": "Producto Actualizado", "price": 500 }
 ```
@@ -109,14 +105,10 @@ Respuesta ejemplo:
 
 ------------------------------------------------------------
 
-Actualizar parcialmente un producto (PATCH)
-PATCH /products/:id
-Descripción: Actualiza parcialmente un producto existente.
-
-Parámetros:
+## Actualizar parcialmente un producto con PATCH /products/:id
+### Descripción: Actualiza parcialmente un producto existente. Parámetros:
 id (path, requerido): ID del producto a actualizar.
-
-Body (JSON): Solo los campos que se desean actualizar
+###Body (JSON): Solo los campos que se desean actualizar
 ```
 { "price": 600 }
 ```
@@ -127,15 +119,12 @@ Respuesta ejemplo:
 
 ------------------------------------------------------------
 
-Eliminar un producto
-DELETE /products/:id
-Descripción: Elimina un producto por su ID.
-
-Parámetros:
+## Eliminar un producto con DELETE /products/:id
+### Descripción: Elimina un producto por su ID. Parámetros:
 id (path, requerido): ID del producto a eliminar.
-Respuesta: 204 No Content
+### Respuesta: 204 No Content
 
-Códigos de estado
+### Códigos de estado
 ```
 200 - OK: Operación exitosa
 201 - Created: Recurso creado exitosamente
@@ -172,17 +161,17 @@ vercel.json
 ```
 ------------------------------------------------------------
 
-Tecnologías utilizadas:
-Node.js
-Express.js
-Nodemon
-JSON Web Token (JWT) Debugger
-ES6 Modules
-Vercel
-Firestore
+## Tecnologías utilizadas:
+### Node.js
+### Express.js
+### Nodemon
+### JSON Web Token (JWT) Debugger
+### ES6 Modules
+### Vercel
+### Firestore
 
 ------------------------------------------------------------
 
 # Autor:
-Linkedln: Matias Daniel Falon Coviello
-GitHub: https://github.com/PelaFaCov
+## Linkedln: Matias Daniel Falon Coviello
+## GitHub: https://github.com/PelaFaCov
