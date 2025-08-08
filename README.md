@@ -19,8 +19,11 @@ npm install -g nodemon
 ```
 ------------------------------------------------------------
 ### Configurar variables de entorno:
+
 Copiar el archivo de ejemplo y completar los datos requeridos
+```bash
 cp .env
+```
 Luego editar el archivo .env con los valores correspondientes para tu entorno.
 ------------------------------------------------------------
 
@@ -34,25 +37,25 @@ Login
 POST /login
 Descripción: Devuelve un token JWT para autenticar las peticiones.
 Body (JSON):
-
+```
 {
   "email": "cliente@gmail.com",
   "password": "client1234"
 }
-
+```
 ------------------------------------------------------------
 
 Obtener todos los productos
 GET /products
 Descripción: Devuelve la lista de todos los productos.
 Respuesta ejemplo:
-
+```
 [
   { "id": 1, "name": "ThinkPad X1 Carbon Gen 11 (14" Intel)", "price": 3000 },
   { "id": 2, "name": "HP 250 G10 Intel Core i7-1355U 32GB RAM 1TB SSD 15.6" Intel Iris Xe FreeDOS Gris Oscuro", "price": 1200 },
   { "id": 3, "name": "Yoga Slim 7i Gen 10 Aura Edition (14" Intel)", "price": 2000 }
 ]
-
+```
 ------------------------------------------------------------
 
 Obtener producto por ID
@@ -62,8 +65,9 @@ Parámetros:
 id (path, requerido): ID del producto.
 Ejemplo de uso: /products/1
 Respuesta ejemplo:
+```
 [{ "id": 1, "name": "ThinkPad X1 Carbon Gen 11 (14" Intel)", "price": 3000 }]
-
+```
 
 ------------------------------------------------------------
 
@@ -71,20 +75,20 @@ Crear un producto
 POST /products
 Descripción: Crea un nuevo producto.
 Body (JSON):
-
+```
 {
   "name": "Nuevo Producto",
   "price": 999,
 }
-
+```
 Respuesta ejemplo:
-
+```
 {
   "id": 4,
   "name": "Nuevo Producto",
   "price": 999,
 }
-
+```
 ------------------------------------------------------------
 
 Actualizar un producto (PUT)
@@ -94,12 +98,13 @@ Parámetros:
 id (path, requerido): ID del producto a actualizar.
 
 Body (JSON):
+```
 { "name": "Producto Actualizado", "price": 500 }
-
+```
 Respuesta ejemplo:
-
+```
 { "id": 1, "name": "Producto Actualizado", "price": 500 }
-
+```
 
 ------------------------------------------------------------
 
@@ -111,9 +116,13 @@ Parámetros:
 id (path, requerido): ID del producto a actualizar.
 
 Body (JSON): Solo los campos que se desean actualizar
+```
 { "price": 600 }
+```
 Respuesta ejemplo:
+```
 { "id": 1, "name": "ThinkPad X1 Carbon Gen 11 (14" Intel)", "price": 3600 }
+```
 
 ------------------------------------------------------------
 
@@ -126,15 +135,17 @@ id (path, requerido): ID del producto a eliminar.
 Respuesta: 204 No Content
 
 Códigos de estado
+```
 200 - OK: Operación exitosa
 201 - Created: Recurso creado exitosamente
 204 - No Content: Recurso eliminado exitosamente
 400 - Bad Request: Datos de entrada inválidos
 404 - Not Found: Recurso no encontrado
-
+```
 ------------------------------------------------------------
 
 Estructura del proyecto:
+```
 src/
 ├── controllers/
 │   ├── authcontrollers.js
@@ -157,7 +168,7 @@ package-lock.json
 package.json
 README.md
 vercel.json
-
+```
 ------------------------------------------------------------
 
 Tecnologías utilizadas:
