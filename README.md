@@ -181,5 +181,5 @@ vercel.json
 ------------------------------------------------------------
 
 # Autor:
-## Linkedln: Matias Daniel Falon Coviello
-## GitHub: https://github.com/MattDFC
+- Linkedln: [Matias Daniel Falon Coviello](https://www.linkedin.com/in/matias-falon-coviello/)
+- GitHub: https://github.com/MattDFC
