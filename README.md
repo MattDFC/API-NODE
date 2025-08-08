@@ -9,7 +9,6 @@ Clonar el repositorio
 Instalar dependencias:
 npm install
 Configurar variables de entorno:
-
 Copiar el archivo de ejemplo y completar los datos requeridos
 cp .env
 Luego editar el archivo .env con los valores correspondientes para tu entorno.
