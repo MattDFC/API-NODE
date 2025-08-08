@@ -20,11 +20,20 @@ npm install -g nodemon
 ------------------------------------------------------------
 ### Configurar variables de entorno:
 
-Copiar el archivo de ejemplo y completar los datos requeridos
+Crear el archivo .env
 ```bash
-cp .env
+PORT=
+
+FIREBASE_API_KEY=
+FIREBASE_AUTH_DOMAIN=
+FIREBASE_PROJECT_ID=
+FIREBASE_STORAGE_BUCKET=
+FIREBASE_MESSENGER_SENDER_ID=
+FIREBASE_APP_ID=
+
+JWT_SECRET=
 ```
-Luego editar el archivo .env con los valores correspondientes para tu entorno.
+Luego completar los datos requeridos en el archivo .env con los valores correspondientes para tu entorno.
 ------------------------------------------------------------
 
 Ejecutar en modo desarrollo:
