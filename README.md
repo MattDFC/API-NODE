@@ -50,10 +50,8 @@ nodemon src/index.js
 ```
 ------------------------------------------------------------
 
-Obtener todos los productos
-GET /products
-Descripción: Devuelve la lista de todos los productos.
-Respuesta ejemplo:
+#Obtener todos los productos por  GET /products
+# Descripción: Devuelve la lista de todos los productos. Respuesta ejemplo:
 ```
 [
   { "id": 1, "name": "ThinkPad X1 Carbon Gen 11 (14" Intel)", "price": 3000 },
