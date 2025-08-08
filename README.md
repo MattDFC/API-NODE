@@ -6,7 +6,7 @@ API REST para gestión de productos desarrollada con Node.js y Express.
 Instalación
 Clonar el repositorio
 
-Instalar dependencias
+# Instalar dependencias:
 npm install
 Configurar variables de entorno:
 Copiar el archivo de ejemplo y completar los datos requeridos
