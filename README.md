@@ -10,9 +10,11 @@ Clonar el repositorio
 git clone https://github.com/MattDFC/API-NODE
 ```
 
-# Instalar dependencias:
-npm install,
+### Instalar dependencias:
+```bash
+npm install
 npm install -g nodemon
+```
 ------------------------------------------------------------
 Configurar variables de entorno:
 Copiar el archivo de ejemplo y completar los datos requeridos
